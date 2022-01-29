@@ -1,0 +1,29 @@
+org: turinglabsorg
+app: general
+service: boilerplate
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  lambdaHashingVersion: '20201221'
+  stage: dev
+  environment:
+    DUMMY_PARAMETER: "DUMMY_VALUE"
+
+functions:
+  api:
+    handler: lambda.handler
+    events:
+      - http:
+          path: /
+          method: ANY
+      - http:
+          path: /{proxy+}
+          method: ANY
+
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-typescript
