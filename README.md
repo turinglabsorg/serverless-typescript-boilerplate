@@ -41,6 +41,14 @@ You can work offline with this boilerplate just using:
 serverless offline
 ```
 
+## Remove all resources from AWS
+
+If you want to remove all resources from AWS you need to run:
+
+```
+serverless remove
+```
+
 ## Setup CI/CD
 
 If you want to setup CI/CD you have to go to serverless dashboard, go under *settings* tab and link your repository.
