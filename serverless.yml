@@ -1,8 +1,8 @@
-org: turinglabsorg
+org: yomieth
 app: general
 service: boilerplate
 
-frameworkVersion: '2'
+frameworkVersion: '3'
 
 provider:
   name: aws
